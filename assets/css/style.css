@@ -341,7 +341,6 @@ html,
 #letter98,
 #letter99,
 #letter100 {
-  font-family: "Gloria Hallelujah", cursive;
   width: 50px;
   height: 60px;
   margin-bottom: 40px;
@@ -457,10 +456,11 @@ html,
 }
 #letterBank,
 #challengeBank {
-  width: 780px;
-  height: 125px;
+  width: 880px;
+  height: 225px;
   margin: 20px auto;
-  font-size: 50px;
+  font-size: 35px;
+  font-weight: 700;
   line-height: 60px;
   text-align: center;
   -webkit-user-select: none;
@@ -470,11 +470,12 @@ html,
 #letterBank div,
 #challengeBank div {
   float: left;
-  width: 50px;
-  height: 58px;
+  width: 60px;
+  height: 60px;
   margin: 0px 10px 10px 0px;
   cursor: pointer;
-  background-color: #adadad;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 #letterBank div:hover,
 #challengeBank div:hover {
