@@ -38,8 +38,6 @@ function sp() {
     document.getElementById('introPage').style.display = "none";
     rand = Math.floor(Math.random() * words.length);
     word = words[rand];
-    document.getElementById('singlePage').style.display = "none";
-    document.getElementById('categoryName').innerHTML = "Phrases";
     hangman();
 }
 
