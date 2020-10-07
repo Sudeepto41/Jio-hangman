@@ -226,42 +226,16 @@ function win() {
 function hang() {
     var ctx = document.getElementById("hangman").getContext('2d');
     if (numWrong == 1) {
-        ctx.beginPath(); //head
-        ctx.arc(150, 100, 20, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.beginPath(); //left eye
-        ctx.arc(143, 95, 3.5, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.beginPath(); //right eye
-        ctx.arc(157, 95, 3.5, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.beginPath(); //mouth
-        ctx.arc(150, 103, 9, 0, Math.PI);
-        ctx.stroke();
+        document.getElementById("hangman").src = "Ballon_1.png";
     }
     if (numWrong == 2) {
-        ctx.beginPath(); //body
-        ctx.moveTo(150, 120);
-        ctx.lineTo(150, 190);
-        ctx.stroke();
+        document.getElementById("hangman").src = "Ballon_2.png";
     }
     if (numWrong == 3) {
-        ctx.fillStyle = "white";
-        ctx.fillRect(138, 102, 24, 12); //cover mouth
-        ctx.beginPath(); //straight mouth
-        ctx.moveTo(140, 108);
-        ctx.lineTo(160, 108);
-        ctx.stroke();
-        ctx.beginPath(); //right arm
-        ctx.moveTo(150, 135);
-        ctx.lineTo(180, 160);
-        ctx.stroke();
+        document.getElementById("hangman").src = "Ballon_3.png";
     }
     if (numWrong == 4) {
-        ctx.beginPath(); //left arm
-        ctx.moveTo(150, 135);
-        ctx.lineTo(120, 160);
-        ctx.stroke();
+        document.getElementById("hangman").src = "Ballon_4.png";
     }
     if (numWrong == 5) {
         ctx.fillRect(138, 102, 24, 12); //cover mouth
