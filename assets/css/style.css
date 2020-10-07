@@ -3,12 +3,13 @@ html {
   -ms-text-size-adjust: 100%;
   height: 100%;
   margin: 0;
-  font-family: "Nunito", cursive;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
   background-image: url("../img/WebBg.png");
   background-size: contain;
+  overflow: hidden;
 }
 
 body,
@@ -66,7 +67,6 @@ html,
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  text-decoration: underline;
   margin: 0 auto 10px auto;
 }
 
@@ -78,14 +78,14 @@ html,
 
 #sp {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   width: 30%;
   height: 6vh;
   margin: auto;
   line-height: 60px;
   text-align: center;
-  color: white;
-  background-color: #00006c;
+  color: #64c4f0;
+  background-color: #fffafa;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -483,95 +483,82 @@ html,
 @media (max-width: 500px) {
   body {
     background-image: url("../img/mobilebg.png");
-    background-size: cover;
+    background-size: contain;
   }
 
-  #introPage,
-  #singlePage,
-  #multiPage,
-  #videoPage {
+  #introPage {
     height: 100%;
     width: 100%;
     min-width: 365px;
   }
-  #introPage {
-  }
-  #introText {
+  #introText p {
     width: 100%;
-  }
-  #introText p,
-  #multiText p {
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
   #buttonContainer {
     width: 90%;
     height: 50px;
   }
-  #sp,
-  #mp,
-  #sp1,
-  #mp1 {
-    font-size: 20px;
-    width: 140px;
+
+  #sp {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 120px;
     height: 50px;
     line-height: 50px;
   }
+
   #sp1 {
     margin: 20px 10px auto auto;
   }
-  #mp1 {
-    margin: 30px 10px auto auto;
-  }
+
   #homeHangman {
-    margin: 70px auto 0 auto;
+    height: 70vh;
+    margin: 50px auto 0 auto;
   }
-  #singlePage {
-    height: 320px;
-  }
-  #categoryHolder {
-    margin: 0 auto;
+
+  .questionBox {
+    height: 8vh;
     width: 90%;
-    height: 180px;
+    margin: 2vh auto 0 auto;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background-color: rgba(211, 211, 211, 0.3);
   }
-  #singlePage p {
-    font-size: 25px;
-  }
-  #multiPage {
-    height: 330px;
-  }
-  #multiText p {
-    font-size: 16px;
-  }
-  #input {
-    padding: 5px;
-    font-size: 15px;
-  }
-  #restriction {
-    right: 85px;
-    bottom: 15px;
-    font-size: 10px;
-  }
-  #characterCount {
-    width: 90%;
-    height: 25px;
-    font-size: 15px;
-  }
-  #submit {
+  .questionBox h2 {
     font-size: 20px;
-    width: 150px;
-    height: 25px;
-    line-height: 25px;
+    font-weight: 500;
   }
+
+  #hangman {
+    display: block;
+    height: 55vh;
+    margin: 0 auto 0 auto;
+  }
+
   #gamePage {
-    min-width: 365px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/mobilebg-skyclouds.png");
+    background-size: contain;
+    background-position: top left;
+    animation: mymove 5s infinite;
   }
-  #categoryName {
-    font-size: 30px;
+
+  @keyframes mymove {
+    50% {
+      background-position: center;
+    }
   }
+
   #wordWrap {
-    width: 320px;
-    margin-top: 10px;
-    padding: 0px;
+    width: 80%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: rgba(211, 211, 211, 0.7);
   }
   #letter1,
   #letter2,
@@ -610,12 +597,15 @@ html,
   #letter35,
   #letter36,
   #letter37,
-  #letter38 {
+  #letter38,
+  #letter39,
+  #letter40 {
     width: 18px;
     height: 30px;
     margin-bottom: 15px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 30px;
   }
   #underline1,
@@ -664,13 +654,14 @@ html,
   }
   #letterBank {
     position: relative;
-    top: 24vh;
+    top: 5vh;
     margin: 0 4% 0 4%;
     width: 92%;
     height: 15vh;
     font-size: 25px;
     line-height: 40px;
   }
+
   #letterBank div {
     width: 40px;
     height: 40px;
