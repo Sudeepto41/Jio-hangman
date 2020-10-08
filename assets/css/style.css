@@ -561,7 +561,7 @@ html,
 
   #wordWrap {
     position: relative;
-    top: -5vh;
+    top: -6vh;
     width: 80%;
     padding: 10px 10px;
     border-radius: 15px;
@@ -661,7 +661,7 @@ html,
   }
   #letterBank {
     position: relative;
-    top: 0vh;
+    top: -1vh;
     margin: 0 4% 0 4%;
     width: 92%;
     height: 15vh;
