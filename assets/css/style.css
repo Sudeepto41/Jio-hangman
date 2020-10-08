@@ -484,6 +484,7 @@ html,
 
 @media (max-width: 500px) {
   body {
+    height: 95vh;
     background-image: url("../img/mobilebg.png");
     background-size: contain;
   }
@@ -537,14 +538,14 @@ html,
 
   #hangman {
     position: relative;
-    margin: 0 auto 0 auto;
+    top: -5vh;
     display: block;
     height: 55vh;
     margin: 0 auto 0 auto;
   }
 
   #gamePage {
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     background-image: url("../img/mobilebg-skyclouds.png");
     background-size: contain;
@@ -559,6 +560,8 @@ html,
   }
 
   #wordWrap {
+    position: relative;
+    top: -5vh;
     width: 80%;
     padding: 10px 10px;
     border-radius: 15px;
@@ -657,8 +660,8 @@ html,
     margin-right: 3px;
   }
   #letterBank {
-    position: absolute;
-    top: 82vh;
+    position: relative;
+    top: 0vh;
     margin: 0 4% 0 4%;
     width: 92%;
     height: 15vh;
@@ -678,8 +681,12 @@ html,
     padding-bottom: 3px;
   }
   #results {
+    position: absolute;
+    top: 60vh;
     margin-top: 5px;
     height: 40px;
+    width: 10%;
+    background-color: red;
   }
 }
 
