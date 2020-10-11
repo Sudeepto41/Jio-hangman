@@ -487,7 +487,6 @@ html,
         height: 95vh;
         background-image: url("../img/mobilelong.png");
         background-size: contain;
-        animation: mymove 0.1s infinite;
     }
     /*div {
         width: 100px;
