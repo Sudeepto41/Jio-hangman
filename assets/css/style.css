@@ -485,10 +485,9 @@ html,
 @media (max-width: 500px) {
     body {
         height: 95vh;
-        width: 100%;
         background-image: url("../img/mobilelong.png");
         background-size: contain;
-        animation: mymove 5s infinite;
+        animation: mymove 0.1s infinite;
     }
     /*div {
         width: 100px;
