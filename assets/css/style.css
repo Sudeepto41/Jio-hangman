@@ -540,7 +540,8 @@ html,
     #gamePage {
         height: 95vh;
         width: 100%;
-        background-image: url("../img/mobilebg-skyclouds.png");
+        /*background-image: url("../img/mobilebg-skyclouds.png");*/
+        background-image: url("../img/mobilelong.png");
         background-size: contain;
         background-position: top left;
         animation: mymove 5s infinite;
