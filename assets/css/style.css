@@ -548,21 +548,15 @@ html,
     #gamePage {
         height: 95vh;
         width: 100%;
-        /*background-image: url("../img/mobilebg-skyclouds.png");*/
+        background-image: url("../img/mobilebg-skyclouds.png");
         background-size: contain;
         background-position: top left;
-        /*animation: mymove 5s infinite;*/
+        animation: mymove 5s infinite;
     }
     @keyframes mymove {
         /*50% {
             background-position: center;
         }*/
-        from {
-            top: 200px;
-        }
-        to {
-            top: 0px;
-        }
     }
     #wordWrap {
         position: relative;
