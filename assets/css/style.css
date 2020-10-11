@@ -487,6 +487,7 @@ html,
         height: 95vh;
         background-image: url("../img/mobilelong.png");
         background-size: contain;
+        animation: mymove 5s infinite;
     }
     #introPage {
         height: 100%;
@@ -540,14 +541,20 @@ html,
     #gamePage {
         height: 95vh;
         width: 100%;
-        background-image: url("../img/mobilebg-skyclouds.png");
+        /*background-image: url("../img/mobilebg-skyclouds.png");*/
         background-size: contain;
         background-position: top left;
         animation: mymove 5s infinite;
     }
     @keyframes mymove {
-        50% {
+        /*50% {
             background-position: center;
+        }*/
+        from {
+            top: 0px;
+        }
+        to {
+            top: 200px;
         }
     }
     #wordWrap {
