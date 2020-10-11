@@ -538,7 +538,7 @@ html,
         margin: 0 auto 0 auto;
     }
     #gamePage {
-        height: 95vh;
+        height: 50vh;
         width: 100%;
         /*background-image: url("../img/mobilebg-skyclouds.png");*/
         background-image: url("../img/mobilelong.png");
