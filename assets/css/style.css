@@ -487,6 +487,7 @@ html,
         height: 95vh;
         background-image: url("../img/mobilelong.png");
         background-size: contain;
+        position: relative;
         animation: mymove 5s infinite;
     }
     #introPage {
@@ -685,56 +686,57 @@ html,
         width: 10%;
         background-color: red;
     }
-  }
+}
 
-  #wordWrap {
+#wordWrap {
     position: relative;
     top: -6vh;
     width: 80%;
     padding: 10px 10px;
     border-radius: 15px;
     background-color: rgba(211, 211, 211, 0.7);
-  }
-  #letter1,
-  #letter2,
-  #letter3,
-  #letter4,
-  #letter5,
-  #letter6,
-  #letter7,
-  #letter8,
-  #letter9,
-  #letter10,
-  #letter11,
-  #letter12,
-  #letter13,
-  #letter14,
-  #letter15,
-  #letter16,
-  #letter17,
-  #letter18,
-  #letter19,
-  #letter20,
-  #letter21,
-  #letter22,
-  #letter23,
-  #letter24,
-  #letter25,
-  #letter26,
-  #letter27,
-  #letter28,
-  #letter29,
-  #letter30,
-  #letter31,
-  #letter32,
-  #letter33,
-  #letter34,
-  #letter35,
-  #letter36,
-  #letter37,
-  #letter38,
-  #letter39,
-  #letter40 {
+}
+
+#letter1,
+#letter2,
+#letter3,
+#letter4,
+#letter5,
+#letter6,
+#letter7,
+#letter8,
+#letter9,
+#letter10,
+#letter11,
+#letter12,
+#letter13,
+#letter14,
+#letter15,
+#letter16,
+#letter17,
+#letter18,
+#letter19,
+#letter20,
+#letter21,
+#letter22,
+#letter23,
+#letter24,
+#letter25,
+#letter26,
+#letter27,
+#letter28,
+#letter29,
+#letter30,
+#letter31,
+#letter32,
+#letter33,
+#letter34,
+#letter35,
+#letter36,
+#letter37,
+#letter38,
+#letter39,
+#letter40 {
     width: 18px;
     height: 30px;
     margin-bottom: 15px;
@@ -742,52 +744,54 @@ html,
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-  }
-  #underline1,
-  #underline2,
-  #underline3,
-  #underline4,
-  #underline5,
-  #underline6,
-  #underline7,
-  #underline8,
-  #underline9,
-  #underline10,
-  #underline11,
-  #underline12,
-  #underline13,
-  #underline14,
-  #underline15,
-  #underline16,
-  #underline17,
-  #underline18,
-  #underline19,
-  #underline20,
-  #underline21,
-  #underline22,
-  #underline23,
-  #underline24,
-  #underline25,
-  #underline26,
-  #underline27,
-  #underline28,
-  #underline29,
-  #underline30,
-  #underline31,
-  #underline32,
-  #underline33,
-  #underline34,
-  #underline35,
-  #underline36,
-  #underline37,
-  #underline38,
-  #underline39,
-  #underline40 {
+}
+
+#underline1,
+#underline2,
+#underline3,
+#underline4,
+#underline5,
+#underline6,
+#underline7,
+#underline8,
+#underline9,
+#underline10,
+#underline11,
+#underline12,
+#underline13,
+#underline14,
+#underline15,
+#underline16,
+#underline17,
+#underline18,
+#underline19,
+#underline20,
+#underline21,
+#underline22,
+#underline23,
+#underline24,
+#underline25,
+#underline26,
+#underline27,
+#underline28,
+#underline29,
+#underline30,
+#underline31,
+#underline32,
+#underline33,
+#underline34,
+#underline35,
+#underline36,
+#underline37,
+#underline38,
+#underline39,
+#underline40 {
     width: 18px;
     height: 30px;
     margin-right: 3px;
-  }
-  #letterBank {
+}
+
+#letterBank {
     position: relative;
     top: -1vh;
     margin: 0 4% 0 4%;
@@ -795,28 +799,31 @@ html,
     height: 15vh;
     font-size: 25px;
     line-height: 40px;
-  }
+}
 
-  #letterBank div {
+#letterBank div {
     width: 40px;
     height: 40px;
     margin: 0px 5px 10px 0px;
-  }
-  #letterBank div:active {
+}
+
+#letterBank div:active {
     width: 41px;
     font-size: 25px;
     padding-top: 0px;
     padding-bottom: 3px;
-  }
-  #results {
+}
+
+#results {
     position: absolute;
     top: 60vh;
     margin-top: 5px;
     height: 40px;
     width: 10%;
-  }
 }
 
+
+}
 @media (max-width: 450px) {
     #restriction {
         right: 60px;
