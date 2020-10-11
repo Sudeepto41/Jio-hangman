@@ -560,10 +560,10 @@ html,
             background-position: center;
         }*/
         from {
-            top: 0px;
+            top: 200px;
         }
         to {
-            top: 200px;
+            top: 0px;
         }
     }
     #wordWrap {
