@@ -546,9 +546,9 @@ html,
         animation: mymove 5s infinite;
     }
     @keyframes mymove {
-        50% {
+        /*50% {
             background-position: center;
-        }
+        }*/
         from {
             top: 95vh;
         }
