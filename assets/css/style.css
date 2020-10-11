@@ -485,6 +485,7 @@ html,
 @media (max-width: 500px) {
     body {
         height: 95vh;
+        width: 100%;
         background-image: url("../img/mobilelong.png");
         background-size: contain;
         background-position: center;
