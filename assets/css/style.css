@@ -543,7 +543,7 @@ html,
         /*background-image: url("../img/mobilebg-skyclouds.png");*/
         background-image: url("../img/mobilelong.png");
         background-size: contain;
-        background-position: top left;
+        background-position: relative;
         animation: mymove 5s infinite;
     }
     @keyframes mymove {
