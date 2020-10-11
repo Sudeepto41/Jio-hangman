@@ -487,7 +487,7 @@ html,
         height: 95vh;
         background-image: url("../img/mobilelong.png");
         background-size: contain;
-        position: relative;
+        background-position: center;
         animation: mymove 5s infinite;
     }
     #introPage {
@@ -545,7 +545,7 @@ html,
         /*background-image: url("../img/mobilebg-skyclouds.png");*/
         background-size: contain;
         background-position: top left;
-        animation: mymove 5s infinite;
+        /*animation: mymove 5s infinite;*/
     }
     @keyframes mymove {
         /*50% {
