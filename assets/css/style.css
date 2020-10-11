@@ -549,6 +549,12 @@ html,
         50% {
             background-position: center;
         }
+        from {
+            top: 95vh;
+        }
+        to {
+            top: 0vh;
+        }
     }
     #wordWrap {
         position: relative;
