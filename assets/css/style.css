@@ -55,7 +55,7 @@ html,
 
 #introPage {
   display: block;
-  height: 90vh;
+  height: 100vh;
   width: 50%;
 }
 
@@ -520,9 +520,11 @@ html,
     margin: 25px auto 0 auto;
   }
   .questionBox {
+    position: relative;
+    top: 1vh;
     height: 8vh;
     width: 90%;
-    margin: 2vh auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 5px 5px;
     border-radius: 20px;
     background-color: rgba(211, 211, 211, 0.3);
@@ -539,11 +541,14 @@ html,
     margin: 0 auto 0 auto;
   }
   #gamePage {
+    position: relative;
     height: 100vh;
     background-image: url("../img/mobilelong.png");
     background-size: cover;
     background-position: bottom;
-    animation: mymove 10s ease-in;
+    animation: mymove 60s ease-in;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
   }
   @keyframes mymove {
     50% {
