@@ -484,13 +484,12 @@ html,
 
 @media (max-width: 500px) {
   body {
-    height: 95vh;
+    height: 100vh;
     background-image: url("../img/mobilelong.png");
-    background-size: cover;
-    background-position: bottom;
+    background-size: contain;
   }
   #introPage {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     min-width: 365px;
   }
@@ -540,25 +539,18 @@ html,
   }
   #gamePage {
     height: 100vh;
-    width: 100%;
     background-image: url("../img/mobilelong.png");
     background-size: cover;
-    background-position: bottom;
-    animation: mymove 5s;
+    animation: mymove 8s;
   }
   @keyframes mymove {
-    50% {
-      background-position: center;
+    from {
+      background-position: bottom;
     }
-    100% {
+    to {
       background-position: top;
     }
   }
-
-  #gamePage {
-    background-position: top;
-  }
-
   #wordWrap {
     position: relative;
     top: -6vh;
@@ -678,14 +670,6 @@ html,
     font-size: 25px;
     padding-top: 0px;
     padding-bottom: 3px;
-  }
-  #results {
-    position: absolute;
-    top: 60vh;
-    margin-top: 5px;
-    height: 40px;
-    width: 10%;
-    background-color: red;
   }
 }
 
