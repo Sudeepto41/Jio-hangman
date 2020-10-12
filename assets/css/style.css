@@ -550,7 +550,9 @@ html,
         /*50% {
             background-position: center;
         }*/
-        from {}
+        from {
+            background-position: bottom;
+        }
         to {
             background-position: top;
         }
