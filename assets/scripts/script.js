@@ -27,7 +27,8 @@ var words = ["Early bird gets the worm",
     "Cut to the chase",
     "Best of both worlds",
     "Kill two birds with one stone",
-    "Break a leg", "Hit the nail on the head",
+    "Break a leg",
+    "Hit the nail on the head",
     "Kick the bucket",
     "Frankly, my dear, I don't give a damn",
     "May the Force be with you",
@@ -72,8 +73,67 @@ function hangman() {
         y--;
     }
     phraseLength = word.length - spaces;
+
     document.getElementById('gamePage').style.display = "block";
+    fly();
     splitWords();
+
+}
+
+function fly() {
+    console.log(1)
+    function ground() {
+        console.log(2)
+        var tl = new TimelineMax({
+            repeat: -1
+        });
+
+        tl.to("#gamePage .ground", 20, {
+            backgroundPosition: "1301px bottom",
+            force3D: true,
+            rotation: 0.01,
+            z: 0.01,
+            autoRound: false,
+            ease: Linear.easeNone
+        });
+
+        return tl;
+    }
+
+    function sky() {
+        console.log(2)
+        var tl = new TimelineMax({
+            repeat: -1
+        });
+
+        tl.to("#sky", 52, {
+            backgroundPosition: "-2247px bottom",
+            force3D: true,
+            rotation: 0.01,
+            z: 0.01,
+            //autoRound:false,
+            ease: Linear.easeNone
+        });
+
+        return tl;
+    }
+
+    var masterTL = new TimelineMax({
+        repeat: -1
+    });
+
+    // window load event makes sure image is 
+    // loaded before running animation
+    window.onload = function () {
+
+        masterTL
+            .add(ground(), 0)
+            .add(sky(), 0)
+            .timeScale(0.7)
+            .progress(1).progress(0)
+            .play();
+
+    };
 }
 
 function splitWords() {
@@ -265,7 +325,6 @@ function reset() {
     results.style.marginTop = "5px";
     results.style.lineHeight = "40px";
     results.innerHTML = " ";
-    document.getElementById('vidSent').style.display = "none";
     document.getElementById('letterBank').style.display = "block";
     again.style.marginTop = "0px";
     again.style.display = "none";

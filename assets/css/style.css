@@ -485,24 +485,67 @@ html,
 @media (max-width: 500px) {
   body {
     height: 100vh;
-    background-image: url("../img/mobilelong.png");
-    background-size: cover;
-    background-position: bottom;
   }
+
   #introPage {
     height: 100vh;
     width: 100%;
     min-width: 365px;
   }
-  #introText p {
+
+  .sky {
+    position: absolute;
+    top: 0vh;
+    height: 100vh;
     width: 100%;
+    background: url("../img/mobilebgsky.png");
+    background-size: cover;
+    z-index: -2;
+  }
+
+  .ground {
+    position: absolute;
+    top: 0vh;
+    height: 100vh;
+    width: 100%;
+    background: url("../img/mobilebgland.png");
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .baloon {
+    position: relative;
+    top: 4vh;
+    margin: 0 auto 0 auto;
+    height: 65vh;
+    width: 70%;
+    background: url("../img/Balloon_0.png");
+    background-size: contain;
+    z-index: 0;
+  }
+
+  #introText {
+    position: relative;
+    top: -6vh;
+    margin: 0 auto 0 auto;
+    height: 3vh;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #introText p {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
   }
+
   #buttonContainer {
+    position: relative;
+    top: 80vh;
+    margin: 0 auto 0 auto;
     width: 90%;
     height: 50px;
+    z-index: 2;
   }
   #sp {
     font-size: 28px;
@@ -511,6 +554,7 @@ html,
     width: 120px;
     height: 50px;
     line-height: 50px;
+    z-index: 2;
   }
   #sp1 {
     margin: 20px 10px auto auto;
@@ -543,21 +587,72 @@ html,
   #gamePage {
     position: relative;
     height: 100vh;
-    background-image: url("../img/mobilelong.png");
-    background-size: cover;
-    background-position: bottom;
-    animation: mymove 60s ease-in;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
   }
-  @keyframes mymove {
-    50% {
-      background-position: center;
-    }
+
+  #gamePage .sky {
+    position: absolute;
+    top: 0vh;
+    height: 100vh;
+    width: 100%;
+    background: url("../img/mobilebgsky.png");
+    background-position: bottom;
+    background-size: cover;
+    z-index: -2;
+    animation: moveSky 14s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @keyframes moveSky {
     100% {
       background-position: top;
     }
   }
+
+  #gamePage .ground {
+    position: absolute;
+    top: 0vh;
+    height: 100vh;
+    width: 100%;
+    background: url("../img/mobilebgland.png");
+    background-size: contain;
+    z-index: -1;
+    animation: moveGround 10s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  @keyframes moveGround {
+    100% {
+      top: 110vh;
+    }
+  }
+
+  #gamePage .baloon {
+    position: relative;
+    top: 0vh;
+    margin: 0 auto 0 auto;
+    height: 65vh;
+    width: 70%;
+    background: url("../img/Balloon_0.png");
+    background-size: contain;
+    animation: moveBaloon 2s ease-in infinite;
+    z-index: 0;
+  }
+
+  @keyframes moveBaloon {
+    25% {
+      top: -1vh;
+    }
+    50% {
+      top: -2vh;
+    }
+    75% {
+      top: -1vh;
+    }
+    100% {
+      top: 0vh;
+    }
+  }
+
   #wordWrap {
     position: relative;
     top: -6vh;
