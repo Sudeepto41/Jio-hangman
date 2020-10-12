@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  height: 90vh;
+  height: 100vh;
   background-image: url("../img/WebBg.png");
   background-size: contain;
   margin: 0 0;
@@ -486,7 +486,8 @@ html,
   body {
     height: 100vh;
     background-image: url("../img/mobilelong.png");
-    background-size: contain;
+    background-size: cover;
+    background-position: bottom;
   }
   #introPage {
     height: 100vh;
@@ -541,13 +542,14 @@ html,
     height: 100vh;
     background-image: url("../img/mobilelong.png");
     background-size: cover;
-    animation: mymove 8s;
+    background-position: bottom;
+    animation: mymove 10s ease-in;
   }
   @keyframes mymove {
-    from {
-      background-position: bottom;
+    50% {
+      background-position: center;
     }
-    to {
+    100% {
       background-position: top;
     }
   }
