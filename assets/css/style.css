@@ -544,7 +544,7 @@ html,
         background-image: url("../img/mobilelong.png");
         background-size: contain;
         position: relative;
-        animation: mymove 10s infinite;
+        animation: mymove 10s;
     }
     @keyframes mymove {
         /*50% {
