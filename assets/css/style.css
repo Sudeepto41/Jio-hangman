@@ -550,11 +550,9 @@ html,
         /*50% {
             background-position: center;
         }*/
-        from {
-            top: 95vh;
-        }
+        from {}
         to {
-            top: 0vh;
+            background-position: top;
         }
     }
     #wordWrap {
