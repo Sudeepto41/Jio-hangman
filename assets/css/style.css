@@ -630,7 +630,7 @@ html,
     position: relative;
     top: 0vh;
     margin: 0 auto 0 auto;
-    height: 65vh;
+    height: 60vh;
     width: 70%;
     background: url("../img/Balloon_0.png");
     background-size: contain;
@@ -664,7 +664,7 @@ html,
 
 #wordWrap {
   position: relative;
-  top: -8vh;
+  top: -9vh;
   width: 80%;
   padding: 10px 10px;
   border-radius: 15px;
@@ -766,7 +766,7 @@ html,
 
 #letterBank {
   position: relative;
-  top: -2.5vh;
+  top: -3.5vh;
   margin: 0 4% 0 4%;
   width: 92%;
   height: 15vh;
