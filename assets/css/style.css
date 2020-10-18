@@ -1,877 +1,17 @@
-<<<<<<< HEAD
-        html {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            height: 100%;
-            margin: 0;
-            font-family: "Roboto Condensed", sans-serif;
-        }
-        
-        body {
-            height: 100vh;
-            background-image: url("../img/Web-bglong.png");
-            background-size: contain;
-            margin: 0 0;
-            overflow: hidden;
-        }
-        
-        body,
-        html,
-        #category,
-        #category1,
-        #category2,
-        #phrases,
-        #movies,
-        #songs,
-        #challenge,
-        #introPage,
-        #introText,
-        #introText p,
-        #sp,
-        #mp,
-        #sp1,
-        #mp1,
-        #multiPage,
-        #singlePage #wordWrap,
-        #wordWrap div,
-        #restriction,
-        #gamePage,
-        #letterBank div,
-        #challengeBank div,
-        #videoPage {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        
-        #introPage,
-        #singlePage {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-        }
-        
-        #introPage {
-            display: block;
-            height: 100vh;
-            width: 50%;
-        }
-        
-        #introText {
-            width: 45%;
-            height: 10vh;
-            margin: 10px auto;
-        }
-        
-        #introText p {
-            font-size: 40px;
-            font-weight: 600;
-            text-align: center;
-            margin: 0 auto 10px auto;
-        }
-        
-        #buttonContainer {
-            width: 50%;
-            height: 7vh;
-            margin: 7vh auto;
-        }
-        
-        #sp {
-            font-size: 30px;
-            font-weight: 600;
-            width: 30%;
-            height: 6vh;
-            margin: auto;
-            line-height: 60px;
-            text-align: center;
-            color: #64c4f0;
-            background-color: #fffafa;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-        
-        #gamePage {
-            display: none;
-            text-align: center;
-            position: relative;
-            height: 100vh;
-            background-image: url("../img/Web-bglong.png");
-            background-size: cover;
-            background-position: bottom;
-            animation: mymove 60s ease-in;
-            animation-timing-function: ease-in-out;
-            -webkit-animation-timing-function: ease-in-out;
-        }
-        
-        .questionBox {
-            height: 20vh;
-            width: 60%;
-            margin: 2vh auto 2vh auto;
-            border-radius: 40px;
-            background-color: rgba(211, 211, 211, 0.2);
-        }
-        
-        #homeHangman {
-            display: block;
-            height: 50vh;
-            margin: 0 auto 0 auto;
-        }
-        
-        #hangman {
-            display: block;
-            height: 40vh;
-            margin: 0 auto 0 auto;
-        }
-        
-        @keyframes mymove {
-            50% {
-                background-position: center;
-            }
-            100% {
-                background-position: top;
-            }
-        }
-        
-        #wordWrap {
-            display: inline-block;
-            width: 830px;
-            margin: 0 auto;
-            padding: 10px;
-        }
-        
-        #letter1,
-        #letter2,
-        #letter3,
-        #letter4,
-        #letter5,
-        #letter6,
-        #letter7,
-        #letter8,
-        #letter9,
-        #letter10,
-        #letter11,
-        #letter12,
-        #letter13,
-        #letter14,
-        #letter15,
-        #letter16,
-        #letter17,
-        #letter18,
-        #letter19,
-        #letter20,
-        #letter21,
-        #letter22,
-        #letter23,
-        #letter24,
-        #letter25,
-        #letter26,
-        #letter27,
-        #letter28,
-        #letter29,
-        #letter30,
-        #letter31,
-        #letter32,
-        #letter33,
-        #letter34,
-        #letter35,
-        #letter36,
-        #letter37,
-        #letter38,
-        #letter39,
-        #letter40 {
-            width: 50px;
-            height: 60px;
-            margin-bottom: 1vh;
-            text-align: center;
-            font-size: 40px;
-            line-height: 80px;
-        }
-        
-        #underline1,
-        #underline2,
-        #underline3,
-        #underline4,
-        #underline5,
-        #underline6,
-        #underline7,
-        #underline8,
-        #underline9,
-        #underline10,
-        #underline11,
-        #underline12,
-        #underline13,
-        #underline14,
-        #underline15,
-        #underline16,
-        #underline17,
-        #underline18,
-        #underline19,
-        #underline20,
-        #underline21,
-        #underline22,
-        #underline23,
-        #underline24,
-        #underline25,
-        #underline26,
-        #underline27,
-        #underline28,
-        #underline29,
-        #underline30,
-        #underline31,
-        #underline32,
-        #underline33,
-        #underline34,
-        #underline35,
-        #underline36,
-        #underline37,
-        #underline38,
-        #underline39,
-        #underline40 {
-            display: none;
-            float: left;
-            width: 50px;
-            height: 60px;
-            margin-right: 5px;
-        }
-        
-        #letterBank {
-            width: 40%;
-            height: 20vh;
-            margin: 20px auto;
-            font-size: 35px;
-            font-weight: 700;
-            line-height: 60px;
-            text-align: center;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-        }
-        
-        #letterFirstrow div,
-        #letterSecondrow div,
-        #letterThirdrow div {
-            width: 60px;
-            height: 60px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-            background-color: #ffffff;
-        }
-        
-        #letterFirstrow div:hover {
-            background-color: #d3d3d3;
-        }
-        
-        #letterSecondrow div:hover {
-            background-color: #d3d3d3;
-        }
-        
-        #letterThirdrow div:hover {
-            background-color: #d3d3d3;
-        }
-        
-        #letterFirstrow div:active {
-            background-color: #d3d3d3;
-            width: 50px;
-            font-size: 45px;
-            padding-top: 3px;
-        }
-        
-        #letterSecondrow div:active {
-            background-color: #d3d3d3;
-            width: 50px;
-            font-size: 45px;
-            padding-top: 3px;
-        }
-        
-        #letterThirdrow div:active {
-            background-color: #d3d3d3;
-            width: 50px;
-            font-size: 45px;
-            padding-top: 3px;
-        }
-        
-        #results {
-            margin-top: 5px;
-            height: 70px;
-            visibility: hidden;
-            line-height: 70px;
-        }
-        
-        #again,
-        #home,
-        #home1 {
-            display: none;
-            width: 40%;
-            height: 5vh;
-            margin: 10px auto;
-            font-size: 25px;
-            line-height: 50px;
-            text-align: center;
-            color: white;
-            background-color: #00006c;
-            border-radius: 25px;
-            cursor: pointer;
-        }
-        
-        #home {
-            margin-top: 0px;
-        }
-        
-        @media (max-width: 866px) {
-            body {
-                background-image: url("../img/Web-bglong.png");
-            }
-            #introPage,
-            #singlePage,
-            #multiPage,
-            #videoPage {
-                width: 700px;
-                height: 700px;
-            }
-            #introText {
-                width: 350px;
-                height: 110px;
-            }
-            #introText p,
-            #multiText p {
-                font-size: 25px;
-                margin: 10px auto;
-            }
-            #buttonContainer {
-                width: 500px;
-                height: 60px;
-                margin: 20px auto;
-            }
-            #sp {
-                font-size: 25px;
-                width: 175px;
-                height: 60px;
-                line-height: 60px;
-            }
-            #sp1 {
-                margin: 25px 10px auto auto;
-            }
-            #mp1 {
-                margin: 40px 10px auto auto;
-            }
-            #homeHangman {
-                margin: 100px auto 0 auto;
-            }
-            #singlePage {
-                height: 345px;
-            }
-            #singlePage p {
-                font-size: 30px;
-                margin: 0px auto 20px auto;
-            }
-            #categoryName {
-                margin: 0 auto;
-                font-size: 30px;
-            }
-            #wordWrap {
-                display: inline-block;
-                width: 470px;
-                margin: 0 auto;
-                padding: 0px;
-            }
-            #letter1,
-            #letter2,
-            #letter3,
-            #letter4,
-            #letter5,
-            #letter6,
-            #letter7,
-            #letter8,
-            #letter9,
-            #letter10,
-            #letter11,
-            #letter12,
-            #letter13,
-            #letter14,
-            #letter15,
-            #letter16,
-            #letter17,
-            #letter18,
-            #letter19,
-            #letter20,
-            #letter21,
-            #letter22,
-            #letter23,
-            #letter24,
-            #letter25,
-            #letter26,
-            #letter27,
-            #letter28,
-            #letter29,
-            #letter30,
-            #letter31,
-            #letter32,
-            #letter33,
-            #letter34,
-            #letter35,
-            #letter36,
-            #letter37,
-            #letter38,
-            #letter39,
-            #letter40 {
-                width: 28px;
-                height: 45px;
-                font-size: 30px;
-                line-height: 45px;
-            }
-            #underline1,
-            #underline2,
-            #underline3,
-            #underline4,
-            #underline5,
-            #underline6,
-            #underline7,
-            #underline8,
-            #underline9,
-            #underline10,
-            #underline11,
-            #underline12,
-            #underline13,
-            #underline14,
-            #underline15,
-            #underline16,
-            #underline17,
-            #underline18,
-            #underline19,
-            #underline20,
-            #underline21,
-            #underline22,
-            #underline23,
-            #underline24,
-            #underline25,
-            #underline26,
-            #underline27,
-            #underline28,
-            #underline29,
-            #underline30,
-            #underline31,
-            #underline32,
-            #underline33,
-            #underline34,
-            #underline35,
-            #underline36,
-            #underline37,
-            #underline38,
-            #underline39,
-            #underline40 {
-                width: 28px;
-                height: 45px;
-                margin-right: 3px;
-            }
-            #hangman {
-                margin: 20px auto 0 auto;
-            }
-            #gamePage {
-                position: relative;
-                height: 100vh;
-                background-image: url("../img/Web-bglong.png");
-                background-size: cover;
-                background-position: bottom;
-                animation: mymove 60s ease-in;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-timing-function: ease-in-out;
-            }
-            @keyframes mymove {
-                50% {
-                    background-position: center;
-                }
-                100% {
-                    background-position: top;
-                }
-            }
-            #letterBank {
-                position: relative;
-                top: 15vh;
-                width: 60%;
-                height: 16vh;
-                font-size: 35px;
-                line-height: 45px;
-            }
-            #letterBank div,
-            #challengeBank div {
-                width: 44px;
-                height: 44px;
-                margin: 0px 3.5px 5px 0px;
-            }
-            #letterBank div:active,
-            #challengeBank div:active {
-                width: 44px;
-                font-size: 27px;
-                padding-top: 0px;
-                padding-bottom: 3px;
-            }
-            #results {
-                margin-top: 5px;
-                height: 50px;
-                visibility: hidden;
-                line-height: 70px;
-            }
-        }
-        
-        @media (max-width: 500px) {
-            body {
-                height: 100vh;
-                background-image: url("../img/mobilelong.png");
-                background-size: cover;
-                background-position: bottom;
-            }
-            #introPage {
-                height: 100vh;
-                width: 100%;
-                min-width: 365px;
-            }
-            #introText p {
-                width: 100%;
-                font-size: 30px;
-                font-weight: 600;
-                letter-spacing: 1px;
-            }
-            #buttonContainer {
-                width: 90%;
-                height: 50px;
-            }
-            #sp {
-                font-size: 28px;
-                font-weight: 600;
-                letter-spacing: 1px;
-                width: 120px;
-                height: 50px;
-                line-height: 50px;
-            }
-            #sp1 {
-                margin: 20px 10px auto auto;
-            }
-            #homeHangman {
-                height: 70vh;
-                margin: 25px auto 0 auto;
-            }
-            .questionBox {
-                position: relative;
-                top: 1vh;
-                height: 8vh;
-                width: 90%;
-                margin: 0 auto 0 auto;
-                padding: 5px 5px;
-                border-radius: 20px;
-                background-color: rgba(211, 211, 211, 0.3);
-            }
-            .questionBox h2 {
-                font-size: 20px;
-                font-weight: 500;
-            }
-            #hangman {
-                position: relative;
-                top: -5vh;
-                display: block;
-                height: 55vh;
-                margin: 0 auto 0 auto;
-            }
-            #gamePage {
-                position: relative;
-                height: 100vh;
-                background-image: url("../img/mobilelong.png");
-                background-size: cover;
-                background-position: bottom;
-                animation: mymove 60s ease-in;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-timing-function: ease-in-out;
-            }
-            @keyframes mymove {
-                50% {
-                    background-position: center;
-                }
-                100% {
-                    background-position: top;
-                }
-            }
-            #wordWrap {
-                position: relative;
-                top: -6vh;
-                width: 80%;
-                padding: 10px 10px;
-                border-radius: 15px;
-                background-color: rgba(211, 211, 211, 0.7);
-            }
-            #letter1,
-            #letter2,
-            #letter3,
-            #letter4,
-            #letter5,
-            #letter6,
-            #letter7,
-            #letter8,
-            #letter9,
-            #letter10,
-            #letter11,
-            #letter12,
-            #letter13,
-            #letter14,
-            #letter15,
-            #letter16,
-            #letter17,
-            #letter18,
-            #letter19,
-            #letter20,
-            #letter21,
-            #letter22,
-            #letter23,
-            #letter24,
-            #letter25,
-            #letter26,
-            #letter27,
-            #letter28,
-            #letter29,
-            #letter30,
-            #letter31,
-            #letter32,
-            #letter33,
-            #letter34,
-            #letter35,
-            #letter36,
-            #letter37,
-            #letter38,
-            #letter39,
-            #letter40 {
-                width: 18px;
-                height: 30px;
-                margin-bottom: 15px;
-                text-align: center;
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 30px;
-            }
-            #underline1,
-            #underline2,
-            #underline3,
-            #underline4,
-            #underline5,
-            #underline6,
-            #underline7,
-            #underline8,
-            #underline9,
-            #underline10,
-            #underline11,
-            #underline12,
-            #underline13,
-            #underline14,
-            #underline15,
-            #underline16,
-            #underline17,
-            #underline18,
-            #underline19,
-            #underline20,
-            #underline21,
-            #underline22,
-            #underline23,
-            #underline24,
-            #underline25,
-            #underline26,
-            #underline27,
-            #underline28,
-            #underline29,
-            #underline30,
-            #underline31,
-            #underline32,
-            #underline33,
-            #underline34,
-            #underline35,
-            #underline36,
-            #underline37,
-            #underline38,
-            #underline39,
-            #underline40 {
-                width: 18px;
-                height: 30px;
-                margin-right: 3px;
-            }
-            #letterBank {
-                position: relative;
-                top: -1vh;
-                margin: 0 4% 0 4%;
-                width: 92%;
-                height: 15vh;
-                font-size: 25px;
-                line-height: 40px;
-            }
-            #letterBank div {
-                width: 40px;
-                height: 40px;
-                margin: 0px 5px 10px 0px;
-            }
-            #letterBank div:active {
-                width: 41px;
-                font-size: 25px;
-                padding-top: 0px;
-                padding-bottom: 3px;
-            }
-        }
-        
-        #wordWrap {
-            position: relative;
-            top: -6vh;
-            width: 80%;
-            padding: 10px 10px;
-            border-radius: 15px;
-            background-color: rgba(211, 211, 211, 0.7);
-        }
-        
-        #letter1,
-        #letter2,
-        #letter3,
-        #letter4,
-        #letter5,
-        #letter6,
-        #letter7,
-        #letter8,
-        #letter9,
-        #letter10,
-        #letter11,
-        #letter12,
-        #letter13,
-        #letter14,
-        #letter15,
-        #letter16,
-        #letter17,
-        #letter18,
-        #letter19,
-        #letter20,
-        #letter21,
-        #letter22,
-        #letter23,
-        #letter24,
-        #letter25,
-        #letter26,
-        #letter27,
-        #letter28,
-        #letter29,
-        #letter30,
-        #letter31,
-        #letter32,
-        #letter33,
-        #letter34,
-        #letter35,
-        #letter36,
-        #letter37,
-        #letter38,
-        #letter39,
-        #letter40 {
-            width: 18px;
-            height: 30px;
-            margin-bottom: 15px;
-            text-align: center;
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 30px;
-        }
-        
-        #underline1,
-        #underline2,
-        #underline3,
-        #underline4,
-        #underline5,
-        #underline6,
-        #underline7,
-        #underline8,
-        #underline9,
-        #underline10,
-        #underline11,
-        #underline12,
-        #underline13,
-        #underline14,
-        #underline15,
-        #underline16,
-        #underline17,
-        #underline18,
-        #underline19,
-        #underline20,
-        #underline21,
-        #underline22,
-        #underline23,
-        #underline24,
-        #underline25,
-        #underline26,
-        #underline27,
-        #underline28,
-        #underline29,
-        #underline30,
-        #underline31,
-        #underline32,
-        #underline33,
-        #underline34,
-        #underline35,
-        #underline36,
-        #underline37,
-        #underline38,
-        #underline39,
-        #underline40 {
-            width: 18px;
-            height: 30px;
-            margin-right: 3px;
-        }
-        
-        #letterBank {
-            position: relative;
-            top: -1vh;
-            margin: 0 4% 0 4%;
-            width: 92%;
-            height: 15vh;
-            font-size: 25px;
-            line-height: 40px;
-        }
-        
-        #letterBank div {
-            width: 40px;
-            height: 40px;
-            margin: 0px 5px 10px 0px;
-        }
-        
-        #letterBank div:active {
-            width: 41px;
-            font-size: 25px;
-            padding-top: 0px;
-            padding-bottom: 3px;
-        }
-        
-        #results {
-            position: absolute;
-            top: 60vh;
-            margin-top: 5px;
-            height: 40px;
-            width: 10%;
-        }
-        
-        @media (max-width: 450px) {
-            #restriction {
-                right: 60px;
-                bottom: 15px;
-                font-size: 10px;
-            }
-        }
-=======
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  height: 100%;
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+HEAD html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
-  height: 100vh;
-  background-image: url("../img/Web-bglong.png");
-  background-size: contain;
-  margin: 0 0;
-  overflow: hidden;
+    height: 100vh;
+    background-image: url("../img/Web-bglong.png");
+    background-size: contain;
+    margin: 0 0;
+    overflow: hidden;
 }
 
 body,
@@ -898,90 +38,107 @@ html,
 #letterBank div,
 #challengeBank div,
 #videoPage {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #introPage,
 #singlePage {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
 #introPage {
-  display: block;
-  height: 100vh;
-  width: 50%;
+    display: block;
+    height: 100vh;
+    width: 50%;
 }
 
 #introText {
-  width: 45%;
-  height: 10vh;
-  margin: 10px auto;
+    width: 45%;
+    height: 10vh;
+    margin: 10px auto;
 }
 
 #introText p {
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
-  margin: 0 auto 10px auto;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 10px auto;
 }
 
 #buttonContainer {
-  width: 50%;
-  height: 7vh;
-  margin: 7vh auto;
+    width: 50%;
+    height: 7vh;
+    margin: 7vh auto;
 }
 
 #sp {
-  font-size: 30px;
-  font-weight: 600;
-  width: 30%;
-  height: 6vh;
-  margin: auto;
-  line-height: 60px;
-  text-align: center;
-  color: #64c4f0;
-  background-color: #fffafa;
-  border-radius: 20px;
-  cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    width: 30%;
+    height: 6vh;
+    margin: auto;
+    line-height: 60px;
+    text-align: center;
+    color: #64c4f0;
+    background-color: #fffafa;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 #gamePage {
-  display: none;
-  text-align: center;
+    display: none;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/Web-bglong.png");
+    background-size: cover;
+    background-position: bottom;
+    animation: mymove 60s ease-in;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
 }
 
 .questionBox {
-  height: 20vh;
-  width: 60%;
-  margin: 2vh auto 2vh auto;
-  border-radius: 40px;
-  background-color: rgba(211, 211, 211, 0.2);
+    height: 20vh;
+    width: 60%;
+    margin: 2vh auto 2vh auto;
+    border-radius: 40px;
+    background-color: rgba(211, 211, 211, 0.2);
 }
 
 #homeHangman {
-  display: block;
-  height: 50vh;
-  margin: 0 auto 0 auto;
+    display: block;
+    height: 50vh;
+    margin: 0 auto 0 auto;
 }
 
 #hangman {
-  display: block;
-  height: 40vh;
-  margin: 0 auto 0 auto;
+    display: block;
+    height: 40vh;
+    margin: 0 auto 0 auto;
+}
+
+@keyframes mymove {
+    50% {
+        background-position: center;
+    }
+    100% {
+        background-position: top;
+    }
 }
 
 #wordWrap {
-  display: inline-block;
-  width: 830px;
-  margin: 0 auto;
-  padding: 10px;
+    display: inline-block;
+    width: 830px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 #letter1,
@@ -1024,12 +181,12 @@ html,
 #letter38,
 #letter39,
 #letter40 {
-  width: 50px;
-  height: 60px;
-  margin-bottom: 1vh;
-  text-align: center;
-  font-size: 40px;
-  line-height: 80px;
+    width: 50px;
+    height: 60px;
+    margin-bottom: 1vh;
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
 }
 
 #underline1,
@@ -1072,504 +229,541 @@ html,
 #underline38,
 #underline39,
 #underline40 {
-  display: none;
-  float: left;
-  width: 50px;
-  height: 60px;
-  margin-right: 5px;
+    display: none;
+    float: left;
+    width: 50px;
+    height: 60px;
+    margin-right: 5px;
 }
 
 #letterBank {
-  width: 40%;
-  height: 20vh;
-  margin: 20px auto;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 60px;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+    width: 40%;
+    height: 20vh;
+    margin: 20px auto;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #letterFirstrow div,
 #letterSecondrow div,
 #letterThirdrow div {
-  width: 60px;
-  height: 60px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ffffff;
 }
 
 #letterFirstrow div:hover {
-  background-color: #d3d3d3;
+    background-color: #d3d3d3;
 }
 
 #letterSecondrow div:hover {
-  background-color: #d3d3d3;
+    background-color: #d3d3d3;
 }
 
 #letterThirdrow div:hover {
-  background-color: #d3d3d3;
+    background-color: #d3d3d3;
 }
 
 #letterFirstrow div:active {
-  background-color: #d3d3d3;
-  width: 50px;
-  font-size: 45px;
-  padding-top: 3px;
+    background-color: #d3d3d3;
+    width: 50px;
+    font-size: 45px;
+    padding-top: 3px;
 }
 
 #letterSecondrow div:active {
-  background-color: #d3d3d3;
-  width: 50px;
-  font-size: 45px;
-  padding-top: 3px;
+    background-color: #d3d3d3;
+    width: 50px;
+    font-size: 45px;
+    padding-top: 3px;
 }
 
 #letterThirdrow div:active {
-  background-color: #d3d3d3;
-  width: 50px;
-  font-size: 45px;
-  padding-top: 3px;
+    background-color: #d3d3d3;
+    width: 50px;
+    font-size: 45px;
+    padding-top: 3px;
 }
 
 #results {
-  margin-top: 5px;
-  height: 70px;
-  visibility: hidden;
-  line-height: 70px;
+    margin-top: 5px;
+    height: 70px;
+    visibility: hidden;
+    line-height: 70px;
 }
 
 #again,
 #home,
 #home1 {
-  display: none;
-  width: 40%;
-  height: 5vh;
-  margin: 10px auto;
-  font-size: 25px;
-  line-height: 50px;
-  text-align: center;
-  color: white;
-  background-color: #00006c;
-  border-radius: 25px;
-  cursor: pointer;
+    display: none;
+    width: 40%;
+    height: 5vh;
+    margin: 10px auto;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #00006c;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 #home {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 @media (max-width: 866px) {
-  body {
-    background-image: url("../img/Web-bglong.png");
-  }
-  #introPage,
-  #singlePage,
-  #multiPage,
-  #videoPage {
-    width: 700px;
-    height: 700px;
-  }
-  #introText {
-    width: 350px;
-    height: 110px;
-  }
-  #introText p,
-  #multiText p {
-    font-size: 25px;
-    margin: 10px auto;
-  }
-  #buttonContainer {
-    width: 500px;
-    height: 60px;
-    margin: 20px auto;
-  }
-  #sp {
-    font-size: 25px;
-    width: 175px;
-    height: 60px;
-    line-height: 60px;
-  }
-  #sp1 {
-    margin: 25px 10px auto auto;
-  }
-  #mp1 {
-    margin: 40px 10px auto auto;
-  }
-  #homeHangman {
-    margin: 100px auto 0 auto;
-  }
-  #singlePage {
-    height: 345px;
-  }
-  #singlePage p {
-    font-size: 30px;
-    margin: 0px auto 20px auto;
-  }
-  #categoryName {
-    margin: 0 auto;
-    font-size: 30px;
-  }
-  #wordWrap {
-    display: inline-block;
-    width: 470px;
-    margin: 0 auto;
-    padding: 0px;
-  }
-  #letter1,
-  #letter2,
-  #letter3,
-  #letter4,
-  #letter5,
-  #letter6,
-  #letter7,
-  #letter8,
-  #letter9,
-  #letter10,
-  #letter11,
-  #letter12,
-  #letter13,
-  #letter14,
-  #letter15,
-  #letter16,
-  #letter17,
-  #letter18,
-  #letter19,
-  #letter20,
-  #letter21,
-  #letter22,
-  #letter23,
-  #letter24,
-  #letter25,
-  #letter26,
-  #letter27,
-  #letter28,
-  #letter29,
-  #letter30,
-  #letter31,
-  #letter32,
-  #letter33,
-  #letter34,
-  #letter35,
-  #letter36,
-  #letter37,
-  #letter38,
-  #letter39,
-  #letter40 {
-    width: 28px;
-    height: 45px;
-    font-size: 30px;
-    line-height: 45px;
-  }
-  #underline1,
-  #underline2,
-  #underline3,
-  #underline4,
-  #underline5,
-  #underline6,
-  #underline7,
-  #underline8,
-  #underline9,
-  #underline10,
-  #underline11,
-  #underline12,
-  #underline13,
-  #underline14,
-  #underline15,
-  #underline16,
-  #underline17,
-  #underline18,
-  #underline19,
-  #underline20,
-  #underline21,
-  #underline22,
-  #underline23,
-  #underline24,
-  #underline25,
-  #underline26,
-  #underline27,
-  #underline28,
-  #underline29,
-  #underline30,
-  #underline31,
-  #underline32,
-  #underline33,
-  #underline34,
-  #underline35,
-  #underline36,
-  #underline37,
-  #underline38,
-  #underline39,
-  #underline40 {
-    width: 28px;
-    height: 45px;
-    margin-right: 3px;
-  }
-  #hangman {
-    margin: 20px auto 0 auto;
-  }
-  #letterBank {
-    position: relative;
-    top: 15vh;
-    width: 60%;
-    height: 16vh;
-    font-size: 35px;
-    line-height: 45px;
-  }
-  #letterBank div,
-  #challengeBank div {
-    width: 44px;
-    height: 44px;
-    margin: 0px 3.5px 5px 0px;
-  }
-  #letterBank div:active,
-  #challengeBank div:active {
-    width: 44px;
-    font-size: 27px;
-    padding-top: 0px;
-    padding-bottom: 3px;
-  }
-  #results {
-    margin-top: 5px;
-    height: 50px;
-    visibility: hidden;
-    line-height: 70px;
-  }
+    body {
+        background-image: url("../img/Web-bglong.png");
+    }
+    #introPage,
+    #singlePage,
+    #multiPage,
+    #videoPage {
+        width: 700px;
+        height: 700px;
+    }
+    #introText {
+        width: 350px;
+        height: 110px;
+    }
+    #introText p,
+    #multiText p {
+        font-size: 25px;
+        margin: 10px auto;
+    }
+    #buttonContainer {
+        width: 500px;
+        height: 60px;
+        margin: 20px auto;
+    }
+    #sp {
+        font-size: 25px;
+        width: 175px;
+        height: 60px;
+        line-height: 60px;
+    }
+    #sp1 {
+        margin: 25px 10px auto auto;
+    }
+    #mp1 {
+        margin: 40px 10px auto auto;
+    }
+    #homeHangman {
+        margin: 100px auto 0 auto;
+    }
+    #singlePage {
+        height: 345px;
+    }
+    #singlePage p {
+        font-size: 30px;
+        margin: 0px auto 20px auto;
+    }
+    #categoryName {
+        margin: 0 auto;
+        font-size: 30px;
+    }
+    #wordWrap {
+        display: inline-block;
+        width: 470px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    #letter1,
+    #letter2,
+    #letter3,
+    #letter4,
+    #letter5,
+    #letter6,
+    #letter7,
+    #letter8,
+    #letter9,
+    #letter10,
+    #letter11,
+    #letter12,
+    #letter13,
+    #letter14,
+    #letter15,
+    #letter16,
+    #letter17,
+    #letter18,
+    #letter19,
+    #letter20,
+    #letter21,
+    #letter22,
+    #letter23,
+    #letter24,
+    #letter25,
+    #letter26,
+    #letter27,
+    #letter28,
+    #letter29,
+    #letter30,
+    #letter31,
+    #letter32,
+    #letter33,
+    #letter34,
+    #letter35,
+    #letter36,
+    #letter37,
+    #letter38,
+    #letter39,
+    #letter40 {
+        width: 28px;
+        height: 45px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    #underline1,
+    #underline2,
+    #underline3,
+    #underline4,
+    #underline5,
+    #underline6,
+    #underline7,
+    #underline8,
+    #underline9,
+    #underline10,
+    #underline11,
+    #underline12,
+    #underline13,
+    #underline14,
+    #underline15,
+    #underline16,
+    #underline17,
+    #underline18,
+    #underline19,
+    #underline20,
+    #underline21,
+    #underline22,
+    #underline23,
+    #underline24,
+    #underline25,
+    #underline26,
+    #underline27,
+    #underline28,
+    #underline29,
+    #underline30,
+    #underline31,
+    #underline32,
+    #underline33,
+    #underline34,
+    #underline35,
+    #underline36,
+    #underline37,
+    #underline38,
+    #underline39,
+    #underline40 {
+        width: 28px;
+        height: 45px;
+        margin-right: 3px;
+    }
+    #hangman {
+        margin: 20px auto 0 auto;
+    }
+    #gamePage {
+        position: relative;
+        height: 100vh;
+        background-image: url("../img/Web-bglong.png");
+        background-size: cover;
+        background-position: bottom;
+        animation: mymove 60s ease-in;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+    }
+    @keyframes mymove {
+        50% {
+            background-position: center;
+        }
+        100% {
+            background-position: top;
+        }
+    }
+    #letterBank {
+        position: relative;
+        top: 15vh;
+        width: 60%;
+        height: 16vh;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    #letterBank div,
+    #challengeBank div {
+        width: 44px;
+        height: 44px;
+        margin: 0px 3.5px 5px 0px;
+    }
+    #letterBank div:active,
+    #challengeBank div:active {
+        width: 44px;
+        font-size: 27px;
+        padding-top: 0px;
+        padding-bottom: 3px;
+    }
+    #results {
+        margin-top: 5px;
+        height: 50px;
+        visibility: hidden;
+        line-height: 70px;
+    }
 }
 
 @media (max-width: 500px) {
-  body {
-    height: 100vh;
-  }
-
-  #introPage {
-    height: 100vh;
-    width: 100%;
-    min-width: 365px;
-  }
-
-  .sky {
-    position: absolute;
-    top: 0vh;
-    height: 100vh;
-    width: 100%;
-    background: url("../img/mobilebgsky.png");
-    background-size: cover;
-    z-index: -2;
-  }
-
-  .ground {
-    position: absolute;
-    top: 0vh;
-    height: 100vh;
-    width: 100%;
-    background: url("../img/mobilebgland.png");
-    background-size: contain;
-    z-index: -1;
-  }
-
-  .baloon {
-    position: relative;
-    top: 4vh;
-    margin: 0 auto 0 auto;
-    height: 65vh;
-    width: 70%;
-    background: url("../img/Balloon_0.png");
-    background-size: contain;
-    z-index: 0;
-  }
-
-  #introText {
-    position: relative;
-    top: -5vh;
-    margin: 0 auto 0 auto;
-    height: 3vh;
-    width: 100%;
-    z-index: 1;
-  }
-
-  #introText p {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-
-  #buttonContainer {
-    position: relative;
-    top: 80vh;
-    margin: 0 auto 0 auto;
-    width: 90%;
-    height: 50px;
-    z-index: 2;
-  }
-  #sp {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    width: 120px;
-    height: 50px;
-    line-height: 50px;
-    z-index: 2;
-  }
-  #sp1 {
-    margin: 20px 10px auto auto;
-  }
-  #homeHangman {
-    height: 70vh;
-    margin: 25px auto 0 auto;
-  }
-  .questionBox {
-    position: relative;
-    top: 1vh;
-    height: 8vh;
-    width: 90%;
-    margin: 0 auto 0 auto;
-    padding: 5px 5px;
-    border-radius: 20px;
-    background-color: rgba(211, 211, 211, 0.3);
-  }
-  .questionBox h2 {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  #hangman {
-    position: relative;
-    top: -5vh;
-    display: block;
-    height: 55vh;
-    margin: 0 auto 0 auto;
-  }
-  #gamePage {
-    position: relative;
-    height: 100vh;
-  }
-
-  #gamePage .sky {
-    position: absolute;
-    top: 0vh;
-    height: 100vh;
-    width: 100%;
-    background: url("../img/mobilebgsky.png");
-    background-position: bottom;
-    background-size: cover;
-    z-index: -2;
-    animation: moveSky 14s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-  }
-
-  @keyframes moveSky {
-    100% {
-      background-position: top;
+    body {
+        height: 100vh;
+        background-image: url("../img/mobilelong.png");
+        background-size: cover;
+        background-position: bottom;
     }
-  }
-
-  #gamePage .ground {
-    position: absolute;
-    top: 0vh;
-    height: 100vh;
-    width: 100%;
-    background: url("../img/mobilebgland.png");
-    background-size: contain;
-    z-index: -1;
-    animation: moveGround 10s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-  }
-
-  @keyframes moveGround {
-    100% {
-      top: 110vh;
+    #introPage {
+        height: 100vh;
+        width: 100%;
+        min-width: 365px;
     }
-  }
+    #introText p {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    #buttonContainer {
+        width: 90%;
+        height: 50px;
+    }
+    #sp {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #sp1 {
+        margin: 20px 10px auto auto;
+    }
+    #homeHangman {
+        height: 70vh;
+        margin: 25px auto 0 auto;
+    }
+    .questionBox {
+        position: relative;
+        top: 1vh;
+        height: 8vh;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        padding: 5px 5px;
+        border-radius: 20px;
+        background-color: rgba(211, 211, 211, 0.3);
+    }
+    .questionBox h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #hangman {
+        position: relative;
+        top: -5vh;
+        display: block;
+        height: 55vh;
+        margin: 0 auto 0 auto;
+    }
+    #gamePage {
+        position: relative;
+        height: 100vh;
+        background-image: url("../img/mobilelong.png");
+        background-size: cover;
+        background-position: bottom;
+        animation: mymove 60s ease-in;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+    }
+    @keyframes mymove {
+        50% {
+            background-position: center;
+        }
+        100% {
+            background-position: top;
+        }
+    }
+    #wordWrap {
+        position: relative;
+        top: -6vh;
+        width: 80%;
+        padding: 10px 10px;
+        border-radius: 15px;
+        background-color: rgba(211, 211, 211, 0.7);
+    }
+    #letter1,
+    #letter2,
+    #letter3,
+    #letter4,
+    #letter5,
+    #letter6,
+    #letter7,
+    #letter8,
+    #letter9,
+    #letter10,
+    #letter11,
+    #letter12,
+    #letter13,
+    #letter14,
+    #letter15,
+    #letter16,
+    #letter17,
+    #letter18,
+    #letter19,
+    #letter20,
+    #letter21,
+    #letter22,
+    #letter23,
+    #letter24,
+    #letter25,
+    #letter26,
+    #letter27,
+    #letter28,
+    #letter29,
+    #letter30,
+    #letter31,
+    #letter32,
+    #letter33,
+    #letter34,
+    #letter35,
+    #letter36,
+    #letter37,
+    #letter38,
+    #letter39,
+    #letter40 {
+        width: 18px;
+        height: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    #underline1,
+    #underline2,
+    #underline3,
+    #underline4,
+    #underline5,
+    #underline6,
+    #underline7,
+    #underline8,
+    #underline9,
+    #underline10,
+    #underline11,
+    #underline12,
+    #underline13,
+    #underline14,
+    #underline15,
+    #underline16,
+    #underline17,
+    #underline18,
+    #underline19,
+    #underline20,
+    #underline21,
+    #underline22,
+    #underline23,
+    #underline24,
+    #underline25,
+    #underline26,
+    #underline27,
+    #underline28,
+    #underline29,
+    #underline30,
+    #underline31,
+    #underline32,
+    #underline33,
+    #underline34,
+    #underline35,
+    #underline36,
+    #underline37,
+    #underline38,
+    #underline39,
+    #underline40 {
+        width: 18px;
+        height: 30px;
+        margin-right: 3px;
+    }
+    #letterBank {
+        position: relative;
+        top: -1vh;
+        margin: 0 4% 0 4%;
+        width: 92%;
+        height: 15vh;
+        font-size: 25px;
+        line-height: 40px;
+    }
+    #letterBank div {
+        width: 40px;
+        height: 40px;
+        margin: 0px 5px 10px 0px;
+    }
+    #letterBank div:active {
+        width: 41px;
+        font-size: 25px;
+        padding-top: 0px;
+        padding-bottom: 3px;
+    }
+}
 
-  #gamePage .baloon {
-    position: relative;
-    top: 0vh;
-    margin: 0 auto 0 auto;
-    height: 60vh;
-    width: 70%;
-    background: url("../img/Balloon_0.png");
-    background-size: contain;
-    animation: moveBaloon 2s ease-in infinite;
-    z-index: 0;
-  }
-
-  @keyframes moveBaloon {
-    25% {
-      top: -1vh;
-    }
-    50% {
-      top: -2vh;
-    }
-    75% {
-      top: -1vh;
-    }
-    100% {
-      top: 0vh;
-    }
-  }
-
-  #wordWrap {
+#wordWrap {
     position: relative;
     top: -6vh;
     width: 80%;
     padding: 10px 10px;
     border-radius: 15px;
     background-color: rgba(211, 211, 211, 0.7);
-  }
+}
 
-  #wordWrap {
-    position: relative;
-    top: -9vh;
-    width: 80%;
-    padding: 10px 10px;
-    border-radius: 15px;
-    background-color: rgba(211, 211, 211, 0.7);
-  }
-  #letter1,
-  #letter2,
-  #letter3,
-  #letter4,
-  #letter5,
-  #letter6,
-  #letter7,
-  #letter8,
-  #letter9,
-  #letter10,
-  #letter11,
-  #letter12,
-  #letter13,
-  #letter14,
-  #letter15,
-  #letter16,
-  #letter17,
-  #letter18,
-  #letter19,
-  #letter20,
-  #letter21,
-  #letter22,
-  #letter23,
-  #letter24,
-  #letter25,
-  #letter26,
-  #letter27,
-  #letter28,
-  #letter29,
-  #letter30,
-  #letter31,
-  #letter32,
-  #letter33,
-  #letter34,
-  #letter35,
-  #letter36,
-  #letter37,
-  #letter38,
-  #letter39,
-  #letter40 {
+#letter1,
+#letter2,
+#letter3,
+#letter4,
+#letter5,
+#letter6,
+#letter7,
+#letter8,
+#letter9,
+#letter10,
+#letter11,
+#letter12,
+#letter13,
+#letter14,
+#letter15,
+#letter16,
+#letter17,
+#letter18,
+#letter19,
+#letter20,
+#letter21,
+#letter22,
+#letter23,
+#letter24,
+#letter25,
+#letter26,
+#letter27,
+#letter28,
+#letter29,
+#letter30,
+#letter31,
+#letter32,
+#letter33,
+#letter34,
+#letter35,
+#letter36,
+#letter37,
+#letter38,
+#letter39,
+#letter40 {
     width: 18px;
     height: 30px;
     margin-bottom: 15px;
@@ -1577,90 +771,873 @@ html,
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-  }
+}
 
-  #underline1,
-  #underline2,
-  #underline3,
-  #underline4,
-  #underline5,
-  #underline6,
-  #underline7,
-  #underline8,
-  #underline9,
-  #underline10,
-  #underline11,
-  #underline12,
-  #underline13,
-  #underline14,
-  #underline15,
-  #underline16,
-  #underline17,
-  #underline18,
-  #underline19,
-  #underline20,
-  #underline21,
-  #underline22,
-  #underline23,
-  #underline24,
-  #underline25,
-  #underline26,
-  #underline27,
-  #underline28,
-  #underline29,
-  #underline30,
-  #underline31,
-  #underline32,
-  #underline33,
-  #underline34,
-  #underline35,
-  #underline36,
-  #underline37,
-  #underline38,
-  #underline39,
-  #underline40 {
+#underline1,
+#underline2,
+#underline3,
+#underline4,
+#underline5,
+#underline6,
+#underline7,
+#underline8,
+#underline9,
+#underline10,
+#underline11,
+#underline12,
+#underline13,
+#underline14,
+#underline15,
+#underline16,
+#underline17,
+#underline18,
+#underline19,
+#underline20,
+#underline21,
+#underline22,
+#underline23,
+#underline24,
+#underline25,
+#underline26,
+#underline27,
+#underline28,
+#underline29,
+#underline30,
+#underline31,
+#underline32,
+#underline33,
+#underline34,
+#underline35,
+#underline36,
+#underline37,
+#underline38,
+#underline39,
+#underline40 {
     width: 18px;
     height: 30px;
     margin-right: 3px;
-  }
+}
 
-  #letterBank {
+#letterBank {
     position: relative;
-    top: -3.5vh;
+    top: -1vh;
     margin: 0 4% 0 4%;
     width: 92%;
     height: 15vh;
     font-size: 25px;
     line-height: 40px;
-  }
+}
 
-  #letterBank div {
+#letterBank div {
     width: 40px;
     height: 40px;
     margin: 0px 5px 10px 0px;
-  }
+}
 
-  #letterBank div:active {
+#letterBank div:active {
     width: 41px;
     font-size: 25px;
     padding-top: 0px;
     padding-bottom: 3px;
-  }
+}
 
-  #results {
+#results {
     position: absolute;
     top: 60vh;
     margin-top: 5px;
     height: 40px;
     width: 10%;
-  }
-
-  @media (max-width: 450px) {
-    #restriction {
-      right: 60px;
-      bottom: 15px;
-      font-size: 10px;
-    }
-  }
 }
->>>>>>> 382e4e5e1c83882f018ddcabc22df3ccecbb1043
+
+@media (max-width: 450px) {
+    #restriction {
+        right: 60px;
+        bottom: 15px;
+        font-size: 10px;
+    }
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../img/Web-bglong.png");
+    background-size: contain;
+    margin: 0 0;
+    overflow: hidden;
+}
+
+body,
+html,
+#category,
+#category1,
+#category2,
+#phrases,
+#movies,
+#songs,
+#challenge,
+#introPage,
+#introText,
+#introText p,
+#sp,
+#mp,
+#sp1,
+#mp1,
+#multiPage,
+#singlePage #wordWrap,
+#wordWrap div,
+#restriction,
+#gamePage,
+#letterBank div,
+#challengeBank div,
+#videoPage {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#introPage,
+#singlePage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#introPage {
+    display: block;
+    height: 100vh;
+    width: 50%;
+}
+
+#introText {
+    width: 45%;
+    height: 10vh;
+    margin: 10px auto;
+}
+
+#introText p {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+#buttonContainer {
+    width: 50%;
+    height: 7vh;
+    margin: 7vh auto;
+}
+
+#sp {
+    font-size: 30px;
+    font-weight: 600;
+    width: 30%;
+    height: 6vh;
+    margin: auto;
+    line-height: 60px;
+    text-align: center;
+    color: #64c4f0;
+    background-color: #fffafa;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#gamePage {
+    display: none;
+    text-align: center;
+}
+
+.questionBox {
+    height: 20vh;
+    width: 60%;
+    margin: 2vh auto 2vh auto;
+    border-radius: 40px;
+    background-color: rgba(211, 211, 211, 0.2);
+}
+
+#homeHangman {
+    display: block;
+    height: 50vh;
+    margin: 0 auto 0 auto;
+}
+
+#hangman {
+    display: block;
+    height: 40vh;
+    margin: 0 auto 0 auto;
+}
+
+#wordWrap {
+    display: inline-block;
+    width: 830px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#letter1,
+#letter2,
+#letter3,
+#letter4,
+#letter5,
+#letter6,
+#letter7,
+#letter8,
+#letter9,
+#letter10,
+#letter11,
+#letter12,
+#letter13,
+#letter14,
+#letter15,
+#letter16,
+#letter17,
+#letter18,
+#letter19,
+#letter20,
+#letter21,
+#letter22,
+#letter23,
+#letter24,
+#letter25,
+#letter26,
+#letter27,
+#letter28,
+#letter29,
+#letter30,
+#letter31,
+#letter32,
+#letter33,
+#letter34,
+#letter35,
+#letter36,
+#letter37,
+#letter38,
+#letter39,
+#letter40 {
+    width: 50px;
+    height: 60px;
+    margin-bottom: 1vh;
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+#underline1,
+#underline2,
+#underline3,
+#underline4,
+#underline5,
+#underline6,
+#underline7,
+#underline8,
+#underline9,
+#underline10,
+#underline11,
+#underline12,
+#underline13,
+#underline14,
+#underline15,
+#underline16,
+#underline17,
+#underline18,
+#underline19,
+#underline20,
+#underline21,
+#underline22,
+#underline23,
+#underline24,
+#underline25,
+#underline26,
+#underline27,
+#underline28,
+#underline29,
+#underline30,
+#underline31,
+#underline32,
+#underline33,
+#underline34,
+#underline35,
+#underline36,
+#underline37,
+#underline38,
+#underline39,
+#underline40 {
+    display: none;
+    float: left;
+    width: 50px;
+    height: 60px;
+    margin-right: 5px;
+}
+
+#letterBank {
+    width: 40%;
+    height: 20vh;
+    margin: 20px auto;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#letterFirstrow div,
+#letterSecondrow div,
+#letterThirdrow div {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+#letterFirstrow div:hover {
+    background-color: #d3d3d3;
+}
+
+#letterSecondrow div:hover {
+    background-color: #d3d3d3;
+}
+
+#letterThirdrow div:hover {
+    background-color: #d3d3d3;
+}
+
+#letterFirstrow div:active {
+    background-color: #d3d3d3;
+    width: 50px;
+    font-size: 45px;
+    padding-top: 3px;
+}
+
+#letterSecondrow div:active {
+    background-color: #d3d3d3;
+    width: 50px;
+    font-size: 45px;
+    padding-top: 3px;
+}
+
+#letterThirdrow div:active {
+    background-color: #d3d3d3;
+    width: 50px;
+    font-size: 45px;
+    padding-top: 3px;
+}
+
+#results {
+    margin-top: 5px;
+    height: 70px;
+    visibility: hidden;
+    line-height: 70px;
+}
+
+#again,
+#home,
+#home1 {
+    display: none;
+    width: 40%;
+    height: 5vh;
+    margin: 10px auto;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #00006c;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#home {
+    margin-top: 0px;
+}
+
+@media (max-width: 866px) {
+    body {
+        background-image: url("../img/Web-bglong.png");
+    }
+    #introPage,
+    #singlePage,
+    #multiPage,
+    #videoPage {
+        width: 700px;
+        height: 700px;
+    }
+    #introText {
+        width: 350px;
+        height: 110px;
+    }
+    #introText p,
+    #multiText p {
+        font-size: 25px;
+        margin: 10px auto;
+    }
+    #buttonContainer {
+        width: 500px;
+        height: 60px;
+        margin: 20px auto;
+    }
+    #sp {
+        font-size: 25px;
+        width: 175px;
+        height: 60px;
+        line-height: 60px;
+    }
+    #sp1 {
+        margin: 25px 10px auto auto;
+    }
+    #mp1 {
+        margin: 40px 10px auto auto;
+    }
+    #homeHangman {
+        margin: 100px auto 0 auto;
+    }
+    #singlePage {
+        height: 345px;
+    }
+    #singlePage p {
+        font-size: 30px;
+        margin: 0px auto 20px auto;
+    }
+    #categoryName {
+        margin: 0 auto;
+        font-size: 30px;
+    }
+    #wordWrap {
+        display: inline-block;
+        width: 470px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    #letter1,
+    #letter2,
+    #letter3,
+    #letter4,
+    #letter5,
+    #letter6,
+    #letter7,
+    #letter8,
+    #letter9,
+    #letter10,
+    #letter11,
+    #letter12,
+    #letter13,
+    #letter14,
+    #letter15,
+    #letter16,
+    #letter17,
+    #letter18,
+    #letter19,
+    #letter20,
+    #letter21,
+    #letter22,
+    #letter23,
+    #letter24,
+    #letter25,
+    #letter26,
+    #letter27,
+    #letter28,
+    #letter29,
+    #letter30,
+    #letter31,
+    #letter32,
+    #letter33,
+    #letter34,
+    #letter35,
+    #letter36,
+    #letter37,
+    #letter38,
+    #letter39,
+    #letter40 {
+        width: 28px;
+        height: 45px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    #underline1,
+    #underline2,
+    #underline3,
+    #underline4,
+    #underline5,
+    #underline6,
+    #underline7,
+    #underline8,
+    #underline9,
+    #underline10,
+    #underline11,
+    #underline12,
+    #underline13,
+    #underline14,
+    #underline15,
+    #underline16,
+    #underline17,
+    #underline18,
+    #underline19,
+    #underline20,
+    #underline21,
+    #underline22,
+    #underline23,
+    #underline24,
+    #underline25,
+    #underline26,
+    #underline27,
+    #underline28,
+    #underline29,
+    #underline30,
+    #underline31,
+    #underline32,
+    #underline33,
+    #underline34,
+    #underline35,
+    #underline36,
+    #underline37,
+    #underline38,
+    #underline39,
+    #underline40 {
+        width: 28px;
+        height: 45px;
+        margin-right: 3px;
+    }
+    #hangman {
+        margin: 20px auto 0 auto;
+    }
+    #letterBank {
+        position: relative;
+        top: 15vh;
+        width: 60%;
+        height: 16vh;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    #letterBank div,
+    #challengeBank div {
+        width: 44px;
+        height: 44px;
+        margin: 0px 3.5px 5px 0px;
+    }
+    #letterBank div:active,
+    #challengeBank div:active {
+        width: 44px;
+        font-size: 27px;
+        padding-top: 0px;
+        padding-bottom: 3px;
+    }
+    #results {
+        margin-top: 5px;
+        height: 50px;
+        visibility: hidden;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        height: 100vh;
+    }
+    #introPage {
+        height: 100vh;
+        width: 100%;
+        min-width: 365px;
+    }
+    .sky {
+        position: absolute;
+        top: 0vh;
+        height: 100vh;
+        width: 100%;
+        background: url("../img/mobilebgsky.png");
+        background-size: cover;
+        z-index: -2;
+    }
+    .ground {
+        position: absolute;
+        top: 0vh;
+        height: 100vh;
+        width: 100%;
+        background: url("../img/mobilebgland.png");
+        background-size: contain;
+        z-index: -1;
+    }
+    .baloon {
+        position: relative;
+        top: 4vh;
+        margin: 0 auto 0 auto;
+        height: 65vh;
+        width: 70%;
+        background: url("../img/Balloon_0.png");
+        background-size: contain;
+        z-index: 0;
+    }
+    #introText {
+        position: relative;
+        top: -5vh;
+        margin: 0 auto 0 auto;
+        height: 3vh;
+        width: 100%;
+        z-index: 1;
+    }
+    #introText p {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    #buttonContainer {
+        position: relative;
+        top: 80vh;
+        margin: 0 auto 0 auto;
+        width: 90%;
+        height: 50px;
+        z-index: 2;
+    }
+    #sp {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+        z-index: 2;
+    }
+    #sp1 {
+        margin: 20px 10px auto auto;
+    }
+    #homeHangman {
+        height: 70vh;
+        margin: 25px auto 0 auto;
+    }
+    .questionBox {
+        position: relative;
+        top: 1vh;
+        height: 8vh;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        padding: 5px 5px;
+        border-radius: 20px;
+        background-color: rgba(211, 211, 211, 0.3);
+    }
+    .questionBox h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #hangman {
+        position: relative;
+        top: -5vh;
+        display: block;
+        height: 55vh;
+        margin: 0 auto 0 auto;
+    }
+    #gamePage {
+        position: relative;
+        height: 100vh;
+    }
+    #gamePage .sky {
+        position: absolute;
+        top: 0vh;
+        height: 100vh;
+        width: 100%;
+        background: url("../img/mobilebgsky.png");
+        background-position: bottom;
+        background-size: cover;
+        z-index: -2;
+        animation: moveSky 14s ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+    }
+    @keyframes moveSky {
+        100% {
+            background-position: top;
+        }
+    }
+    #gamePage .ground {
+        position: absolute;
+        top: 0vh;
+        height: 100vh;
+        width: 100%;
+        background: url("../img/mobilebgland.png");
+        background-size: contain;
+        z-index: -1;
+        animation: moveGround 10s ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+    }
+    @keyframes moveGround {
+        100% {
+            top: 110vh;
+        }
+    }
+    #gamePage .baloon {
+        position: relative;
+        top: 0vh;
+        margin: 0 auto 0 auto;
+        height: 60vh;
+        width: 70%;
+        background: url("../img/Balloon_0.png");
+        background-size: contain;
+        animation: moveBaloon 2s ease-in infinite;
+        z-index: 0;
+    }
+    @keyframes moveBaloon {
+        25% {
+            top: -1vh;
+        }
+        50% {
+            top: -2vh;
+        }
+        75% {
+            top: -1vh;
+        }
+        100% {
+            top: 0vh;
+        }
+    }
+    #wordWrap {
+        position: relative;
+        top: -6vh;
+        width: 80%;
+        padding: 10px 10px;
+        border-radius: 15px;
+        background-color: rgba(211, 211, 211, 0.7);
+    }
+    #wordWrap {
+        position: relative;
+        top: -9vh;
+        width: 80%;
+        padding: 10px 10px;
+        border-radius: 15px;
+        background-color: rgba(211, 211, 211, 0.7);
+    }
+    #letter1,
+    #letter2,
+    #letter3,
+    #letter4,
+    #letter5,
+    #letter6,
+    #letter7,
+    #letter8,
+    #letter9,
+    #letter10,
+    #letter11,
+    #letter12,
+    #letter13,
+    #letter14,
+    #letter15,
+    #letter16,
+    #letter17,
+    #letter18,
+    #letter19,
+    #letter20,
+    #letter21,
+    #letter22,
+    #letter23,
+    #letter24,
+    #letter25,
+    #letter26,
+    #letter27,
+    #letter28,
+    #letter29,
+    #letter30,
+    #letter31,
+    #letter32,
+    #letter33,
+    #letter34,
+    #letter35,
+    #letter36,
+    #letter37,
+    #letter38,
+    #letter39,
+    #letter40 {
+        width: 18px;
+        height: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    #underline1,
+    #underline2,
+    #underline3,
+    #underline4,
+    #underline5,
+    #underline6,
+    #underline7,
+    #underline8,
+    #underline9,
+    #underline10,
+    #underline11,
+    #underline12,
+    #underline13,
+    #underline14,
+    #underline15,
+    #underline16,
+    #underline17,
+    #underline18,
+    #underline19,
+    #underline20,
+    #underline21,
+    #underline22,
+    #underline23,
+    #underline24,
+    #underline25,
+    #underline26,
+    #underline27,
+    #underline28,
+    #underline29,
+    #underline30,
+    #underline31,
+    #underline32,
+    #underline33,
+    #underline34,
+    #underline35,
+    #underline36,
+    #underline37,
+    #underline38,
+    #underline39,
+    #underline40 {
+        width: 18px;
+        height: 30px;
+        margin-right: 3px;
+    }
+    #letterBank {
+        position: relative;
+        top: -3.5vh;
+        margin: 0 4% 0 4%;
+        width: 92%;
+        height: 15vh;
+        font-size: 25px;
+        line-height: 40px;
+    }
+    #letterBank div {
+        width: 40px;
+        height: 40px;
+        margin: 0px 5px 10px 0px;
+    }
+    #letterBank div:active {
+        width: 41px;
+        font-size: 25px;
+        padding-top: 0px;
+        padding-bottom: 3px;
+    }
+    #results {
+        position: absolute;
+        top: 60vh;
+        margin-top: 5px;
+        height: 40px;
+        width: 10%;
+    }
+    @media (max-width: 450px) {
+        #restriction {
+            right: 60px;
+            bottom: 15px;
+            font-size: 10px;
+        }
+    }
+}
