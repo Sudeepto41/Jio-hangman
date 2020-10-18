@@ -1372,8 +1372,8 @@ html,
         position: relative;
         top: 4vh;
         margin: 0 auto 0 auto;
-        height: 65vh;
-        width: 70%;
+        height: 45vh;
+        width: 40%;
         background: url("../img/Balloon_0.png");
         background-size: contain;
         z-index: 0;
@@ -1478,7 +1478,7 @@ html,
         top: 0vh;
         margin: 0 auto 0 auto;
         height: 60vh;
-        width: 70%;
+        width: 50%;
         background: url("../img/Balloon_0.png");
         background-size: contain;
         animation: moveBaloon 2s ease-in infinite;
