@@ -1372,8 +1372,8 @@ html,
         position: relative;
         top: 4vh;
         margin: 0 auto 0 auto;
-        height: 45vh;
-        width: 40%;
+        height: 60vh;
+        width: 60%;
         background: url("../img/Balloon_0.png");
         background-size: contain;
         z-index: 0;
@@ -1477,7 +1477,7 @@ html,
         position: relative;
         top: 0vh;
         margin: 0 auto 0 auto;
-        height: 60vh;
+        height: 50vh;
         width: 50%;
         background: url("../img/Balloon_0.png");
         background-size: contain;
