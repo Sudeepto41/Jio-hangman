@@ -9,30 +9,52 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
-    <script type="text/javascript" src="assets/scripts/script.js"></script>
-    <script>
-        window.onload = draw;
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
 </head>
 
 <body>
     <div id="introPage">
-        <div id="introText">
-            <p>Welcome to hangman!</p>
-            <p>Click to begin!</p>
 
-        </div>
         <div id="buttonContainer">
             <div id="sp" onclick="sp()">Start</div>
         </div>
-        <img src="assets/img/Balloon_0.png" id="hangman">
+        <div id="introText">
+            <p>Welcome to hangman!</p>
+            <p>Click to begin!</p>
+        </div>
+        <div class="sky">
+
+        </div>
+
+        <div class="ground">
+
+        </div>
+
+        <div class="baloon">
+
+        </div>
+
     </div>
 
     <div id="gamePage">
         <div class="questionBox">
             <h2>Q. Lorem ipsum dolor sit amet consectetur adipisicing</h2>
         </div>
-        <img src="assets/img/Balloon_0.png" id="hangman">
+
+        <div class="sky">
+
+        </div>
+
+        <div class="ground">
+
+        </div>
+
+        <div class="baloon">
+
+        </div>
+
         <div id="wordWrap">
             <div id="underline1">
                 <div id="letter1"></div>
@@ -203,6 +225,8 @@
         <div id="home" onClick="window.location.reload()">Main menu</div>
 
     </div>
+
+    <script type="text/javascript" src="assets/scripts/script.js"></script>
 </body>
 
 </html>
